@@ -1,6 +1,17 @@
 # Setup
 
-WIP
+Video in action: https://youtu.be/z2gAW0zF6Ow
 
-`npm install -g nodebots-interchange`
-`interchange install git+https://github.com/ajfisher/node-pixel -a uno --firmata`
+Uses Johnny-five to control an LED strip with an arduino. 
+
+You can use interchange to flash node-pixel firmata to your arduino and then run `npm run start`
+The script assumes the arduino is on COM3, change it for the correct serial port if it is at a different location (eg: `/dev/ttyACM0`)
+
+```
+npm install -g nodebots-interchange
+interchange install git+https://github.com/ajfisher/node-pixel -a uno --firmata
+```
+
+Tested working on Windows and Linux, needs some OS specific tweaks for multi-monitor setups.
+
+The script is limsited to around 8hz, any higher and it gets a bit flakey. It could improved by using johnny five with an I2C backpack, to allow more LEDs and a higher update rate (left as an exercise for the reader)
