@@ -1,6 +1,8 @@
 # Setup
 
 Video in action: https://youtu.be/z2gAW0zF6Ow
+terrible photo of the setup behind my desk: https://photos.app.goo.gl/QUbkESciwz1CLRCb9
+LED strip powered by external PSU, arduino connected to data line with a safety resistor on pin 6.
 
 Uses Johnny-five to control an LED strip with an arduino. 
 
